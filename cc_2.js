@@ -69,7 +69,7 @@ console.log(customers[1].purchases);
 console.log("Displaying customer information...!!!");
 // Loop through the customers array using .forEach().
 customers.forEach((customer) => {
-    console.log("Name.." + customer.name);
+    console.log("Customer.." + customer.name);
     console.log("Email:" + customer.email);
     console.log("Purchases:");
     customer.purchases.forEach((purchase) => {
@@ -77,4 +77,6 @@ customers.forEach((customer) => {
     });
     console.log("-------------------------");
 });
+
+
 
