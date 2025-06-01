@@ -42,3 +42,9 @@ console.log("after adding a new customer...!!!");
 console.log(customers);
 
 
+// Remove the first customer using .shift().
+console.log("after removing  the first customer...!!!");
+customers.shift();
+console.log(customers);
+
+
