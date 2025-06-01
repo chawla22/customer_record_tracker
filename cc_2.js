@@ -58,3 +58,10 @@ customers[1].email = "somyachawala22@usf.com";
 console.log(customers[1].email);
 console.log(customers);
 
+
+// Add a new purchase to a customer’s purchases array using .push().
+customers[1].purchases.push("Wireless Charger");
+
+console.log("after adding a new purchase to the customer...!!!");
+console.log(customers[1].purchases);
+
