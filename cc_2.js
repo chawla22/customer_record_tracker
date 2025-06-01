@@ -48,3 +48,13 @@ customers.shift();
 console.log(customers);
 
 
+//   Step 4: Update Customer Info
+// Update the email of one existing customer.
+
+console.log("updating the email of the customer now...!!!");
+customers[1].email = "somyachawala22@usf.com";
+
+// Log the updated email of the  customer.
+console.log(customers[1].email);
+console.log(customers);
+
