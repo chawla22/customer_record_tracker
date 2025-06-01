@@ -73,7 +73,7 @@ customers.forEach((customer) => {
     console.log("Email:" + customer.email);
     console.log("Purchases:");
     customer.purchases.forEach((purchase) => {
-                console.log("---"+purchase);                
+        console.log("---" + purchase);
     });
     console.log("-------------------------");
 });
@@ -90,3 +90,31 @@ customers.forEach((customer) => {
     console.log(`Total Purchases: ${customer.purchases.length}`);
     console.log("-------------------------");
 });
+
+
+// enhancing the code by adding a function to display customer information
+function displayCustomerInfo() {
+
+    
+    let output = "";
+
+    customers.forEach((customer) => {
+        output += `<div class="customer-record">
+            <h2>Customer: ${customer.name}</h2>
+            <p>Email: ${customer.email}</p>
+            <h3>Purchases:</h3>
+            <ul>`;
+   
+            customer.purchases.forEach((purchase) => {
+                output += `<li>${purchase}</li>`;
+            });
+            output += `</ul>
+             </div>`;
+
+ });
+    document.getElementById("customer-records").innerHTML = output;
+        }
+
+
+
+    displayCustomerInfo();
