@@ -80,3 +80,13 @@ customers.forEach((customer) => {
 
 
 
+//  Step 6: Display Customer Information 
+// Display customer information using template literals.
+console.log("Displaying customer information using template literals...!!!");
+// Log each customer’s name, email, and total number of purchases using template literals.
+customers.forEach((customer) => {
+    console.log(`Customer:      ${customer.name}`);
+    console.log(`Email:         ${customer.email}`);
+    console.log(`Total Purchases: ${customer.purchases.length}`);
+    console.log("-------------------------");
+});
