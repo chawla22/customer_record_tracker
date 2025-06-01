@@ -29,4 +29,16 @@ console.log("creating an array of  3 customers ...!!!");
 console.log(customers);
 
 
+// Step 3: Add and Remove Data
+// Add a new customer to the customers array using .push().
+
+customers.push({
+    name: "alice johnson",
+    email: "jhonson@info.com",
+    purchases: ["E-reader", "Bluetooth Speaker"],
+});
+
+console.log("after adding a new customer...!!!");
+console.log(customers);
+
 
